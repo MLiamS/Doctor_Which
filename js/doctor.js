@@ -14,3 +14,6 @@ $.get('https://api.betterdoctor.com/2016-03-01/doctors?query='+ medicalIssue+'&l
     console.log("fail");
   });
 };
+
+
+exports.doctorModule = Doctor;

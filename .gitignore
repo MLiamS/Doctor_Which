@@ -1,5 +1,6 @@
 node_modules/
 .DS-Store
 build/
-temp/
+tmp/
 bower_components/
+.env
