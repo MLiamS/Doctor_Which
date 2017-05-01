@@ -1,5 +1,10 @@
 var Doctor = require('../js/doctor.js').doctorModule;
 
-var getDoctors = function(ailment)  {
-  $(.showDoctors').
-}
+$(document).ready(function() {
+  var doctors = new Doctor();
+  $('#medicalIssue').submit(function(event) {
+    event.preventDefault();
+    var medicalIssue = ($('#medicalIssue').val());
+    doctors.getDoctors(medicalIssue);
+  });
+});
