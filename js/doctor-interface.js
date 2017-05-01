@@ -10,5 +10,10 @@ $(document).ready(function() {
     var medicalIssue = $('#medicalIssue').val();
     console.log(medicalIssue);
     doctors.getDoctors(medicalIssue);
+
+    for (var i = 0; i < medicalIssue.length; i++) {
+      console.log("trying to display doctors");
+     $('#docList').append('<li>' + medicalIssue[i] + '</li>');
+    }
   });
 });
