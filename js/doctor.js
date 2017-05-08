@@ -5,7 +5,7 @@ Doctor = function(){};
 showDoctors = function(result) {
   for (var i = 0; i < medicalIssue.length; i++) {
     console.log("trying to display doctors");
-   $('#docList').append('<li>' + medicalIssue[i] + '</li>');
+   $('#doctors').append('<li>' + medicalIssue[i] + '</li>');
   }
 };
 
